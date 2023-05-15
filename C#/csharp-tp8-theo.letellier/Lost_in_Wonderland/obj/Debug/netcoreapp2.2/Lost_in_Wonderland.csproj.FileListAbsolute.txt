@@ -1,0 +1,11 @@
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\bin\Debug\netcoreapp2.2\Lost_in_Wonderland.deps.json
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\bin\Debug\netcoreapp2.2\Lost_in_Wonderland.runtimeconfig.json
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\bin\Debug\netcoreapp2.2\Lost_in_Wonderland.runtimeconfig.dev.json
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\bin\Debug\netcoreapp2.2\Lost_in_Wonderland.dll
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\bin\Debug\netcoreapp2.2\Lost_in_Wonderland.pdb
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\obj\Debug\netcoreapp2.2\Lost_in_Wonderland.csprojAssemblyReference.cache
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\obj\Debug\netcoreapp2.2\Lost_in_Wonderland.csproj.CoreCompileInputs.cache
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\obj\Debug\netcoreapp2.2\Lost_in_Wonderland.AssemblyInfoInputs.cache
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\obj\Debug\netcoreapp2.2\Lost_in_Wonderland.AssemblyInfo.cs
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\obj\Debug\netcoreapp2.2\Lost_in_Wonderland.dll
+C:\Users\Theo\TP\csharp-tp8-theo.letellier\Lost_in_Wonderland\obj\Debug\netcoreapp2.2\Lost_in_Wonderland.pdb

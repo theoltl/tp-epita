@@ -1,0 +1,14 @@
+let rec length list =
+  if list = [] then 0
+  else
+    let e::l=list in
+    1+length l;;
+
+
+let append l1 l2 =
+  if l2 = [] then l1
+  else let rec append_rec = function
+    []-> l2
+    |e::l ->e::append_rec l
+in append_rec l1;;
+

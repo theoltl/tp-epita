@@ -1,0 +1,169 @@
+Bien le bonjour !
+================================================================================================================
+
+						   I - List_tools
+						   
+================================================================================================================
+
+A) 1.1 Basics
+B) 1.2 - Constuire / Modifier
+C) 'a list list
+
+
+Pour la première partie du TP sur le list_tools, pas de problème particulier rencontré
+
+
+
+
+================================================================================================================
+
+     		 	      	     		   II - Old TEST
+						   
+================================================================================================================
+	A) Chargement de fichier
+   
+ça c'était facile fallait juste faire #use hehe
+
+--------------------------------------------------------------------------------------------------------------
+
+
+	B) Exercice 1 : Immédiatement décodable
+
+
+Fonction IS PREFIX :
+
+Consigne :
+
+Ici, on cherche à créer une fonction qui prend en paramètre une liste L et une liste de listes LL et qui vérifie si L est préfixe d'une des sous-listes de LL, ou si une des sous-listes de LL est préfixe.
+
+Proposition solution :
+
+Pour cela il faut donc extraire la première liste de la liste de listes LL qu'on note e et que l'on compare avec la liste l à  l'aide de la fonction prefix. Si il y a un match, on obtient alors true. Dans le cas contraire, on relance
+avec la liste LL privée de son premier élément notée q. Si il n'y a pas de match, on relance avec la liste q privée de son premier élément etc.. jusqu'à atteindre une liste vide s'il n'y a aucun match. Dans ce cas, la fonction nous
+renvoie false.
+
+________________________________________________________________________________________________________________
+
+
+Fonction DECODABLE :
+
+Consigne :
+
+Écrire une fonction decodable qui prend en paramètre un ensemble de codes (représenté par une liste de
+codes) et qui détermine si cet ensemble est immédiatement décodable.
+
+Proposition solution :
+
+Sachant qu'un ensemble de symboles codés est dit immédiatement décodable si aucun code des symboles ne sert de préfixe à un autre code du même ensemble, on applique la fonction is_prefix afin de voir si la liste de codes contient de
+préfixe. Si tel est le cas, alors elle nous renvoie false, car elle n'est donc pas décodable. Dans le cas contraire, elle nous renvoie true : la liste est alors immédiatement décodable.
+
+--------------------------------------------------------------------------------------------------------------
+
+	C) Exercice 2 : Stock
+
+
+Fonction REFILL :
+
+Consigne :
+
+
+Écrire une fonction refill qui prend en argument un couple (NB, objet) où NB est un entier naturel non nul et une liste stock représentant le stock courant de l'entrepôt, et qui ajoute un NB objet au stock courant
+
+
+
+Proposition solution :
+
+Ici, on sait que si il n'y a pas de correspondance on ajoute (NB,obj) au stock. Pour cela,  on concatène (NB,obj) au stock courant noté l1. Si il y a un match entre l'objet contenu dans ce que l'on cherche à rajouter et le stock
+courant de l'entrepot, alors on ajoute le nombre NB d'objet au stock courant de l'entrepot.
+
+
+________________________________________________________________________________________________________________
+
+
+Fonction DESTOCK :
+
+Consigne :
+
+Écrire la fonction destock qui prend en argument un couple (nb, obj) où nb est un entier naturel non nul et une liste stock représentant le stock courant de l'entrepôt, et qui enlève (obj, nb) du stock s'il est présent. Si le stock
+de l'objet obj n'est pas susant, on retirera tout le stock disponible de l'entrepôt. La fonction retourne un couple où le premier élément est le nouveau stock et le deuxième élément est un entier naturel égal au stock manquant de
+l'objet.
+
+
+Proposition solution :
+
+Ici, on sait que si il n'y a pas de correspondance on ajoute uniquement NB au stock. Pour cela,  on concatène NB au stock courant noté l1. Si il y a un match entre l'objet contenu dans ce que l'on cherche à retirer et le stock
+courant de l'entrepot, alors on compare la valeur NB avec la valeur du nombre qu'il y a dans le stock courant. Si la différence du nombre d'obj dans le stock - le nombre d'obj qu'on cherche a retirer  est négative ou nulle, alors on
+renvoie le couple composé de la liste LL privée de son élément que l'on cherche à retirer et composé de la différence nombre à retirer - stock. Si la différence est positive, on renvoie la liste LL en remplaçant le nombre d'objet à
+retirer et le nombre d'objet du stock par la différence du nombre d'objet dans le stock et le nombre d'objet à retirer.
+
+Si il n'y a pas de match entre l'objet contenu dans ce que l'on cherche à retirer et le stock courant de l'entrepot alors on relance la fonction destock (nb,obj) privée de son premier élément, que l'on garde de côté pour la
+concaténation à la fin.
+
+________________________________________________________________________________________________________________
+
+
+Fonction SHOPPING :
+
+Consigne :
+
+Écrire la fonction shopping qui prend en argument une liste shopList de couples nb, obj où nb est un entier naturel non nul et une liste stock et qui enlève du stock tous les éléments de shopList. La fonction retourne un
+couple où le premier élément est le nouveau stock et le deuxième élément est une liste de couples correspondant
+aux stocks manquants s'il y en a.
+
+
+Proposition solution :
+
+Ici, on sait que si il n'y a pas de correspondance on ajoute (NB,obj) au stock. Pour cela,  on concatènele couple (NB,obj) au stock courant noté l1.
+
+Si il y a un match entre l'objet contenu dans ce que l'on cherche à retirer et lestock courant de l'entrepot, alors on compare la valeur NB avec la valeur du nombre qu'il y a dans le stock courant.
+
+Si la différence du nombre d'obj dans le stock - le nombre d'obj qu'on cherche a retirer  est négative, alors on renvoie le couple composé de la liste LL privée de ou des éléments que l'on supprime que l'on concatène avec la liste
+des éléments manquants contenant le ou les couples (nb,obj) avec ((nb-x),obj) représentant la quantité manquante dans le stock.
+
+Si la différence du nombre d'obj dans le stock - le nombre d'obj qu'on cherche a retirer  est nulle, alors on renvoie le couple composé de la liste LL privée de ou des éléments que l'on supprime que l'on concatène avec une liste vide.
+
+Si la différence du nombre d'obj dans le stock - le nombre d'obj qu'on cherche a retirer  est positive, alors on renvoie la liste LL en faisant remplaçant la valeur du nombre d'objet dans le stock par la différence (x-nb) 
+
+--------------------------------------------------------------------------------------------------------------
+
+		D) Exercice 3 : Rivières numériques
+
+Fonction RIVER :
+
+Consigne :
+
+Utiliser sum_digits pour écrire la fonction river qui à partir de deux entiers n et rank tous deux positifs strictement (Invalid_argument devra être déclenchée dans le cas contraire) construit la rivière n jusqu'au rang rank :
+une liste de longueur rank.
+
+
+Proposition solution :
+
+Afin de construire la rivière n jusqu'au rang rank, on concatène n avec le résultat de l'addition n + la somme des entiers composants n et cela au rang rank-1. Ainsi lorsque rank = 0 alors on obtient la rivière de n jusqu'au rang rank.
+
+
+________________________________________________________________________________________________________________
+
+Fonction MEETING :
+
+Consigne :
+
+Écrire la fonction meeting qui à partir de deux entiers n et rank indique si la rivière n a rencontré une des
+trois rivières (parmi 1, 3 et 9) avant le rang rank : utiliser les fonctions river et common. La fonction retournera : 
+- Si la rencontre a lieu avant le rang donné : le couple (i, nb), où i est l'une des trois valeurs (1, 3 ou 9) et
+nb la valeur de rencontre
+- Sinon : le couple (0, 0)
+
+Proposition solution : Pour savoir si la rivière n a rencontré une des trois rivières (parmi 1, 3 et 9) avant le rang rank, on teste si common ((river 1 rank),(river n rank)) est supérieur à 0 si c'est le cas,
+alors la fonction nous renvoie le couple (1, valeur de rank).
+
+Si ce n'est pas le cas on teste si common ((river 3 rank),(river n rank)) est supérieur à 0 si c'est le cas, alors la fonction nous renvoie le couple (3, valeur de rank).
+
+Si ce n'est pas le cas, alors on teste si common ((river 9 rank),(river n rank)) est supérieur à 0 si c'est le cas, alors la fonction nous renvoie le couple (9, valeur de rank).
+
+Et enfin, si aucun de ces cas ne fonctionne, on obtient (0,0).
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Et voilà, c'est la fin de mon README. Merci de m'avoir lu, bonne journée ou bonne soirée ! (et à la semaine prochaine)

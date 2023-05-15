@@ -1,0 +1,119 @@
+Bien le bonjour ! 
+
+Qui dit nouvelle semaine dit nouveau TP, qui plus est, dans un tout nouveau langage pour moi.
+
+Alors je vais donc te débrifer, en étant clair et concis bien évidemment, mon TP (avec un peu d'Ascii pour l'esthétique):
+________________________________________________________________________________________________________________________________________________________
+
+Bon, on va commencer par le début, fonction par fonction :
+
+  ____            _          
+ |  _ \          (_)         
+ | |_) | __ _ ___ _  ___ ___ 
+ |  _ < / _` / __| |/ __/ __|
+ | |_) | (_| \__ \ | (__\__ \
+ |____/ \__,_|___/_|\___|___/
+ 
+ 
+---------------------------------------------------------------------------------------------------------------------
+
+1 - Pour PARROT, il suffisait juste de suivre l'exemple donné dans l'énoncé, jusque là, rien de compliqué.
+
+---------------------------------------------------------------------------------------------------------------------
+
+2 - Pour Introduction, il suffit juste d'insérer les informations comme l'indique la consigne, pareil, rien de compliqué
+
+---------------------------------------------------------------------------------------------------------------------
+
+3 - Pour Tower, pas de problème rencontré lors de la conception de cette fonction mis à part recopier l'ASCII à la main car
+il n'y avait pas encore de tower.txt
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+Et voilà, c'est fini pour le Basics/, maintenant on s'attaque à la partie 3.2 !
+
+________________________________________________________________________________________________________________________________________________________
+
+  __  __                                 _                 ___  
+ |  \/  |                               | |               |__ \ 
+ | \  / | ___  _ __ ___     ___  _ __   | | ___  ___ ___     ) |
+ | |\/| |/ _ \| '__/ _ \   / _ \| '__|  | |/ _ \/ __/ __|   / / 
+ | |  | | (_) | | |  __/  | (_) | |     | |  __/\__ \__ \  |_|  
+ |_|  |_|\___/|_|  \___|   \___/|_|     |_|\___||___/___/  (_)  
+	 
+---------------------------------------------------------------------------------------------------------------------
+
+Donc, pareil que pour le basics, c'est parti pour aborder fonction par fonction si j'ai eu des difficultés :
+---------------------------------------------------------------------------------------------------------------------
+
+1 - CheckNumber : Pas de difficultés particulières rencontrées lors de la conception de la fonction, mis à part le 
+changement de couleur auquel j'ai dû m'y reprendre à deux fois afin d'afficher dans les bonnes couleurs les phrases.
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+2 - Game : Celle-ci m'a un peu plus retourné le cerveau, ne comprenant pas pourquoi elle ne fonctionnait pas.
+Mais le problème venait de la conversion en Int32 (que je ne connaissais pas). Une fois ce problème résolu, tout fonctionnait
+donc j'étais assez content. 
+
+En elle-même, la fonction permet de comparer un entier établi avec un entier saisi par l'utilisateur et les comparent 
+entre eux, s'ils sont égaux, alors on retourne true sinon, on retourne false en relançant la fonction avec 1 essai en moins.
+Lorsque le nombre d'essai arrive à 0, on affiche le nombre qu'il fallait trouver.
+
+________________________________________________________________________________________________________________________________________________________
+
+  ____                        
+ |  _ \                       
+ | |_) | ___  _ __  _   _ ___ 
+ |  _ < / _ \| '_ \| | | / __|
+ | |_) | (_) | | | | |_| \__ \
+ |____/ \___/|_| |_|\__,_|___/
+ 
+ ---------------------------------------------------------------------------------------------------------------------
+ 
+ LES BONUS, ou plutôt le, parce que j'ai pas réellement compris le fonctionnement du train..
+ 
+ Du coup, je vais détailler ici le fonctionnement de Game2 : Mon jeu automatisé.
+ 
+ Je fais appel à 3 fonctions : 
+ 
+ - Retry : Me permet de demander à l'utilisateur s'il veut rejouer lorsque la partie est finie.
+		   Si oui, alors je relance le jeu. 
+		   Si non, je le remercie d'avoir participé au jeu (avec un petit ascii art eheh)
+		   
+		   
+		   
+ - Initialisation : 
+ 
+		Permet d'établir toutes les conditions pour le bon fonctionnement de mon jeu !
+		
+		~ En effet, celle-ci me permet de d'abord initialiser le niveau de difficulté du jeu :
+		parmi 3 choix possibles, l'utilisateur choisi celui qui lui plait.
+		
+		~ Ensuite, suite au choix de l'utilisateur, je lance le jeu avec 
+		un intervalle et un nombre d'essai spécifique à chaque niveau de difficulté.
+		
+		~ Elle me permet d'ajouter des effets visuels (couleur d'écriture / ascii)
+		
+		~ Elle me permet de d'exécuter "Jeu" mais aussi "Retry" lorsque "Jeu" est terminé.
+		
+		
+		
+ - Jeu : Execute Game avec les paramètres définis dans Initialisation
+		
+		
+		
+ 
+ _______________________________________________________________________________________________________________________________________________________
+
+
+Voilà voilà
+C'est ici que s'achève mon README, en espérant qu'il n'aura pas été trop ennuyant.
+
+A la semaine prochaine pour de nouvelles aventures.. euh fonctions*
+ 
+
+
+
+

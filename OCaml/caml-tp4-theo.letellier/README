@@ -1,0 +1,50 @@
+Bien le bonjour !
+================================================================================================================
+
+						   I - Boite à outils
+						   
+================================================================================================================
+
+Pas de problème particulier rencontrer car les fonctions ici ne sont pas complexes.
+
+================================================================================================================
+
+     		 	      	     		   II - Le jeu
+						   
+================================================================================================================
+
+Le système de coordonnées repose sur le système suivant :
+
+On se place en bas à gauche, c'est à dire aux coordonnées (x,y) avec x = 0 et y = 0.
+Ainsi x correspond à l'axe des abscisses et y correspond à l'axe des ordonnées et on se déplace vers le haut et vers la droite lorsque l'on incrémente (voir Capture.png)
+
+--------------------------------------------------------------------------------------------------------------
+
+
+	a) Les règles
+
+Sur cette partie, toujours pas de problème rencontré.
+
+________________________________________________________________________________________________________________
+
+	b) La vie
+
+Pas de problème particulier sauf sur next_generations où j'ai passé plusieurs heures, non seulement à causes des différentes fonctions à appeler dans un ordre précis; mais aussi à causes d'erreurs dont je ne trouvais pas la source (warning / error), cependant j'ai réussi à m'en sortir quand même. Et ça, c'est le principal !
+
+J'ai mis un petit bonus de matrice faisant un ref undertale :
+
+(*bonus*)
+
+let sans  = [[0;0;0;1;1;1;0;1;1;1;1;0;0;0;0];[0;0;1;0;0;1;1;0;0;0;0;1;1;0;0];[0;0;1;0;0;0;0;0;0;0;0;0;0;1;0];[0;1;0;0;1;1;0;1;1;1;0;0;0;1;0];[0;1;0;1;1;0;0;1;1;1;0;0;0;0;1];[1;0;1;0;1;0;0;1;1;1;0;0;0;0;1];[1;0;1;1;1;0;0;0;0;0;0;0;0;0;0;1];[1;0;1;0;1;0;1;0;0;0;0;0;0;0;0;1];[1;0;1;1;1;0;1;1;0;0;0;0;0;0;0;1];[1;0;1;0;1;0;1;0;0;0;0;0;0;0;0;1];[1;0;1;1;1;0;0;0;0;0;0;0;0;0;0;1];[1;0;1;0;1;0;0;1;1;1;0;0;0;0;1];[0;1;0;1;1;0;0;1;1;1;0;0;0;0;1];[0;1;0;0;1;1;0;1;1;1;0;0;0;1;0];[0;0;1;0;0;0;0;0;0;0;0;0;0;1;0];[0;0;1;0;0;1;1;0;0;0;0;1;1;0;0];[0;0;0;1;1;1;0;1;1;1;1;0;0;0;0]];;
+
+draw_board sans 50;;
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Et voilà, c'est la fin de mon README. Merci de m'avoir lu, il était plus court que la dernière fois car le tp était moins complexe... Bonne journée ou bonne soirée ! (et bonnes vacances)

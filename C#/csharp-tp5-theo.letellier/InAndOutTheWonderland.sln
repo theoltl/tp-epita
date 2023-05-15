@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csproj", "{844B7FAC-FED7-4CA4-A096-7F2C5970FB6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoRabbit", "CryptoRabbit\CryptoRabbit.csproj", "{56C60042-987D-49D3-A748-EBAC67328CCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree", "Tree\Tree.csproj", "{6B11D3D1-09F1-4A84-A493-56F82F20A162}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{844B7FAC-FED7-4CA4-A096-7F2C5970FB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844B7FAC-FED7-4CA4-A096-7F2C5970FB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844B7FAC-FED7-4CA4-A096-7F2C5970FB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{844B7FAC-FED7-4CA4-A096-7F2C5970FB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C60042-987D-49D3-A748-EBAC67328CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C60042-987D-49D3-A748-EBAC67328CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C60042-987D-49D3-A748-EBAC67328CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C60042-987D-49D3-A748-EBAC67328CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B11D3D1-09F1-4A84-A493-56F82F20A162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B11D3D1-09F1-4A84-A493-56F82F20A162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B11D3D1-09F1-4A84-A493-56F82F20A162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B11D3D1-09F1-4A84-A493-56F82F20A162}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

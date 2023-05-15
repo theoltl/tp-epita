@@ -1,0 +1,63 @@
+{
+    "Entities": [
+        {
+            "Class": 3,
+            "InitialPosition": {
+                "X": 4,
+                "Y": 4
+            },
+            "Items": [
+                "Frost ring",
+                "Armor Potion"
+            ],
+            "MainItem": "Lightning spell",
+            "Name": "Maj"
+        },
+        {
+            "Class": 3,
+            "InitialPosition": {
+                "X": 4,
+                "Y": 7
+            },
+            "Items": [ ],
+            "MainItem": "Fairy Stick",
+            "Name": "Maj"
+        },
+        {
+            "Class": 3,
+            "InitialPosition": {
+                "X": 4,
+                "Y": 1
+            },
+            "Items": [ ],
+            "MainItem": "Water Staff",
+            "Name": "Maj"
+        },
+        {
+            "Class": 1,
+            "InitialPosition": {
+                "X": 6,
+                "Y": 3
+            },
+            "Items": [
+                "Health Potion",
+                "Armor Potion"
+            ],
+            "MainItem": "Bone knife",
+            "Name": null
+        },
+        {
+            "Class": 1,
+            "InitialPosition": {
+                "X": 6,
+                "Y": 6
+            },
+            "Items": [
+                "Health Potion",
+                "Armor Potion"
+            ],
+            "MainItem": "Bone knife",
+            "Name": null
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+Bien le bonjour ! 
+
+Qui dit nouvelle semaine dit nouveau TP, qui plus est, dans un tout nouveau langage pour moi.
+
+Alors je vais donc te débrifer, en étant clair et concis bien évidemment, mon TP (avec un peu d'Ascii pour l'esthétique):
+________________________________________________________________________________________________________________________________________________________
+
+Bon, on va commencer par le début, fonction par fonction :
+
+  ____            _          
+ |  _ \          (_)         
+ | |_) | __ _ ___ _  ___ ___ 
+ |  _ < / _` / __| |/ __/ __|
+ | |_) | (_| \__ \ | (__\__ \
+ |____/ \__,_|___/_|\___|___/
+ 
+ 
+---------------------------------------------------------------------------------------------------------------------
+
+1 - Pour HelloWorld, pas de problème particulier rencontré, elle était quand même assez simple cette fonction !
+
+---------------------------------------------------------------------------------------------------------------------
+
+2 - Pour Factorial, j'ai eu quelques problèmes d'indentation au début, mais qui se sont arrangés très vite 
+au bout de quelques minutes de prise en main de Rider (qui est quand même sacrément intuitif).
+
+---------------------------------------------------------------------------------------------------------------------
+
+3 - Pour IsPrime, j'ai eu du mal à cerner le fonctionnement, mais du coup j'ai pris une feuille pour poser le problème,
+et cela m'a permis de me clarifier le principe et me permettre de réussir la fonction.
+
+---------------------------------------------------------------------------------------------------------------------
+
+4 - Pour Fibonacci, j'ai un peu coincé, je voyais pas forcément comment faire sans utiliser de while, mais finalement, 
+comme pour IsPrime, le fait de poser le problème sur un papier m'a permis de me débloquer et donc de pouvoir créer une 
+fonction qui fonctionne !!
+
+---------------------------------------------------------------------------------------------------------------------
+
+5 - FIZZBUZZ, olala, fizzbuzz... Quelle fonction complexe, j'ai vraiment galérer à essayer d'avoir quelque chose qui 
+fonctionne avant de... me rendre compte qu'il y avait une erreur d'énoncé qui était mentionnée avant d'ouvrir le PDF... 
+ça m'apprendra à me précipiter..
+Du coup, pas si compliquée que ça finalement, assez content quand je l'ai terminée.
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+Et voilà, c'est fini pour le Basics/, maintenant on s'attaque au WhiteRabbit !
+
+________________________________________________________________________________________________________________________________________________________
+
+ __          ___     _ _       _____       _     _     _ _   
+ \ \        / / |   (_) |     |  __ \     | |   | |   (_) |  
+  \ \  /\  / /| |__  _| |_ ___| |__) |__ _| |__ | |__  _| |_ 
+   \ \/  \/ / | '_ \| | __/ _ \  _  // _` | '_ \| '_ \| | __|
+    \  /\  /  | | | | | ||  __/ | \ \ (_| | |_) | |_) | | |_ 
+     \/  \/   |_| |_|_|\__\___|_|  \_\__,_|_.__/|_.__/|_|\__|
+	 
+---------------------------------------------------------------------------------------------------------------------
+
+ALORS, ce fameux WhiteRabbit, pas si compliqué, mais quand même long à recopier (dont le bonus ahah).
+
+Donc, pareil que pour le basics, c'est parti pour aborder fonction par fonction si j'ai eu des difficultés :
+---------------------------------------------------------------------------------------------------------------------
+
+1 - WhatTimeIsIt, bon, celle là était donnée..
+
+---------------------------------------------------------------------------------------------------------------------
+
+2 - WhatQuarterItIs, pas très compliquée, il suffit juste d'arrondir au quart d'heure supérieur !
+
+---------------------------------------------------------------------------------------------------------------------
+
+3 - WhatHourItIs, un PETIT peu plus complexe que la précédente, puisqu'il faut arrondir à l'heure la plus proche et 
+non celle supérieure, mais sinon, même principe donc pas très complexe.
+
+---------------------------------------------------------------------------------------------------------------------
+
+4 - DisplayWonderlandTime, bon, entre recopier les 12 horloges différentes et la premières prise en main de switch,
+j'ai mis un peu plus de temps avant de la créer mais c'était plus long que compliqué alors ça va ! :)
+
+---------------------------------------------------------------------------------------------------------------------
+
+5 - RabbitWhatTimeIsIt : Pas très compliquée puisque le plus dur a déjà été fait ! 
+Il faut juste rappeler les fonctions précédentes et les utiliser afin d'afficher la bonne heure et le bon lapin en 
+fonction de l'heure dans le monde réel.
+
+________________________________________________________________________________________________________________________________________________________
+
+  ____                        
+ |  _ \                       
+ | |_) | ___  _ __  _   _ ___ 
+ |  _ < / _ \| '_ \| | | / __|
+ | |_) | (_) | | | | |_| \__ \
+ |____/ \___/|_| |_|\__,_|___/
+ 
+ ---------------------------------------------------------------------------------------------------------------------
+ 
+ Bon, on arrive sur la partie probablement la plus longue et la plus complexe de ce TP, le bonus !
+ 
+ J'ai donc remplacé l'horloge par une montre et le lapin par un autre lapin devant son ordinateur, ça m'aura pris un peu de temps
+ mais je me suis bien amusé.
+ 
+ Au niveau de la complexité, la fonction est exactement la même que RabbitWhatTimeIsIt, j'ai juste changé les dessins.
+ 
+ 
+ _______________________________________________________________________________________________________________________________________________________
+
+
+Voilà voilà
+C'est ici que s'achève mon README, en espérant qu'il n'aura pas été trop ennuyant.
+
+A la semaine prochaine pour de nouvelles aventures.. euh fonctions*
+ 
+
+
+
+

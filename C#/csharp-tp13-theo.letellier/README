@@ -1,0 +1,48 @@
+Nouvelle semaine, nouveau TP, comme d'hab...
+
+
+Du coup, ce TP je l'ai trouvé super intéressant, moi qui est plutôt fan de Photoshop.
+
+Le VerifyArgs était assez long, j'avais des erreurs au début sans vraiment comprendre 
+pourquoi elles étaient là.. Mais j'ai quand même réussi à les corriger en changeant 
+mon approche donc je suis plutôt content sur ce point là.
+
+
+Sur les fonctions dans Basics j'ai pas eu trop de mal, ça allait.
+
+Pour les fonctions dans Geometry, plus ou moins la même chose, mise à part
+un bug de rotation car j'avais oublier de créer une copie, je modifiais donc
+directement l'image pendant le processus, donc ça ne risquait pas de fonctionner...
+
+Pour les fonctions dans convolution, j'ai eu du mal à comprendre le principe, mais
+après environ une 8e relecture du sujet et un peu de concentration j'ai réussi à en
+voir le bout.
+
+Toutefois, le bonus, j'ai pas du tout compris le fonctionnement et par où je devais
+commencer, donc si c'est possible d'avoir la correction après coup pour savoir
+ce qu'il fallait faire je suis preneur !!
+
+voilà voilà, c'est à peu près tout, j'espère que le confinement va pas durer trop 
+longtemps quand même.
+
+Sur ce, bonne fin de semaine :)
+
+
+                         ______                     
+ _________        .---"""      """---.              
+:______.-':      :  .--------------.  :             
+| ______  |      | :                : |             
+|:______B:|      | | AliceInJpegLand| |             
+|:______B:|      | |                | |             
+|:______B:|      | |Use -h or --help| |             
+|   MSI   |      | |  to know how   | |             
+|:_____:  |      | |   it works     | |             
+|    ==   |      | :                : |             
+|       O |      :  '--------------'  :             
+|       o |      :'---...______...---'              
+|       o |-._.-i___/'             \._              
+|'-.____o_|   '-.   '-...______...-'  `-._          
+:_________:      `.____________________   `-.___.-. 
+                 .'.eeeeeeeeeeeeeeeeee.'.      :___:
+               .'.eeeeeeeeeeeeeeeeeeeeee.'.         
+              :____________________________:

@@ -1,0 +1,218 @@
+Bien le bonjour ! 
+
+Qui dit nouvelle semaine dit nouveau TP alors je vais donc te débrifer, en étant clair et concis bien évidemment, mon TP (avec un peu d'Ascii pour l'esthétique):
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ _                       
+| |                      
+| |     ___   ___  _ __  
+| |    / _ \ / _ \| '_ \ 
+| |___| (_) | (_) | |_) |
+|______\___/ \___/| .__/ 
+                  | |    
+                  |_|    
+				  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PrintNaturals : Boucle 'while' avec compteur afin d'afficher les n entiers naturels allant de 1 à n.  -->  Pas de difficulté particulière
+
+
+PrintPrimes : Boucle 'for' contenant une partie pour vérifier si un nombre est naturel et une deuxième partie qui l'affiche si c'est le cas.  -->  Pas de difficulté particulière
+
+
+Fibonacci : On a fait cette fonction en cours, donc  -->  Pas de difficulté particulière.
+
+
+Factorial : J'ai corrigé mon erreur de la semaine dernière qui ne traitait pas (n == 0) corectement. Sinon, c'est la même fonction  -->  Pas de difficulté particulière.
+
+
+PrintStrong : J'ai utilisé une sous fonction : IsStrong. Celle-ci me permet de vérifier si un nombre donné est 'STRONG'. Si c'est le cas, alors elle retourne true.
+				Ensuite, dans PrintStrong, on appelle IsStrong : si on a true, alors on affiche la valeur de i, sinon, on recommence jusqu'à que i > n.  --> Pas de difficulté particulière
+
+
+Abs : Si n < 0 alors on retourne -n, sinon on retourne n.  --> Pas de difficulté particulière
+
+
+Sqrt : J'ai eu un peu de mal à comprendre le principe, mais une fois assimilé, il suffisait juste de coder la formule qui était dans le sujet. --> Pas de difficulté particulière
+
+
+Power : On détermine c = a au début et on attribue ainsi a *= c, on réitère l'opération n fois tant b > 1. --> Pas de difficulté particulière
+
+
+PrintTree : J'ai utilisé deux sous fonction : la première afin de construire l'arbre, et la seconde pour construire la base. Ensuite dans PrintTree j'ai appellé les 2 sous-fonctions pour me former l'arbre.
+			Tree : Créer une pyramide d'étoile en s'incrémentant de 2 à chaque étage, il y a n étage.
+			Base : Fabrique un tronc en fonction de la valeur de n. --> un peu de difficulté à le faire en une fonction, donc je l'ai faite en 2.
+
+
+Syracuse : Il suffit juste d'appliquer les règles de l'énoncé. --> Pas de difficulté particulière
+
+
+
+Bonus de Noël 
+
+Même principe que pour PrintTree , j'ai juste implémenter deux variables de couleurs en plus : une variable constante de couleur verte pour les extrémités et une variable aléatoire de couleur pour simuler des boules de Noël.
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+ _____       _     _                           
+|  __ \     | |   | |                          
+| |  | | ___| |__ | |__  _   _  __ _  ___ _ __ 
+| |  | |/ _ \ '_ \| '_ \| | | |/ _` |/ _ \ '__|
+| |__| |  __/ |_) | |_) | |_| | (_| |  __/ |   
+|_____/ \___|_.__/|_.__/ \__,_|\__, |\___|_|   
+                                __/ |          
+                               |___/    
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EXO 1 :
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dans cet exercice, j'ai trouvé 2 bugs à corriger.
+
+1er bug : 
+Le premier était que dans l'opération "bool isDivisor = Misc.IsDivisorOf (666, 42);" '42' ne changeait jamais, or le '42' m'a fait pensé à "int div = 42", une peu plus haut dans
+la fonction, donc ici, j'ai remplacé par : "bool isDivisor = Misc.IsDivisorOf (666, div);"
+
+
+2e bug : 
+
+L'erreur se trouve dans l'opération "stop &= isDivisor". En effet, cela correspond à l'opérateur "et"
+"stop" étant toujours false, cela nous renverra toujours 'false', peu importe la valeur de isDivisor.
+
+Ainsi , il faut remplacer par "stop |= isDivisor" afin d'avoir l'opérateur "ou", ainsi
+lorsque isDivisor deviendra true, "stop" deviendra 'true'
+
+
+Fonctionnement :
+
+La fonction de l'exo 1 retourne le premier entier diviseur de 666 supérieur à 42.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EXO 2 :
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dans cet exercice, j'ai trouvé 2 bugs à corriger.
+
+1er bug : 
+
+Le premier était l'égalité "i >= 0", lorsque i prenait la valeur 0, alors on avait une valeur négative lors de l'opération i--. Ainsi, il faut mettre l'égalité en "i > 0"
+
+2e bug : 
+
+En modifiant ainsi en "i > 0", nous n'avions pas accès à la valeur 0. Ainsi, j'ai initialisé "res = array[0];" afin de compenser cela.
+
+
+Fonctionnement :
+
+La fonction de l'exo 2 retourne l'addition des nombres contenus dans 'array'.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EXO 3 :
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dans cet exercice, j'ai trouvé 3 bugs à corriger.
+
+Dans 'Exo3()', il y a 2 bugs : 
+
+1er bug : 
+
+Dans la boucle 'for', il faut initialiser 'i' à 0 au lieu de 1 car sinon la premiere valeur de array n'est pas prise en compte
+
+2e bug : 
+
+Ainsi, après avoir changer la valeur de i à 0, dans l'appel de la fonction 'SubFunction1', il faut la remplacer par (array, i, array [i]) car sinon count prendrait la valeur de (-1).
+
+
+Et dans 'SubFunction2' il y en a 1 :
+
+Dans la boucle for (; i < Misc.GetLength (arr) - 2 && arr [i + 1] > arr [i]; ++i), il faut remplacer (i < Misc.GetLength (arr) - 2)
+par (i < Misc.GetLength (arr) - 1) car sinon i n'atteind jamais la dernière valeur de array
+
+
+Fonctionnement :
+
+La fonction de l'exo 3 prend une liste en paramètre et la ressort triée, et retourne true lorsque c'est fait.
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+ _____       _     _                 __  __      _____            _     _       
+|  __ \     | |   | |               |  \/  |    |  __ \          | |   | |      
+| |  | | ___| |__ | |__  _   _  __ _| \  / | ___| |  | | __ _  __| | __| |_   _ 
+| |  | |/ _ \ '_ \| '_ \| | | |/ _` | |\/| |/ _ \ |  | |/ _` |/ _` |/ _` | | | |
+| |__| |  __/ |_) | |_) | |_| | (_| | |  | |  __/ |__| | (_| | (_| | (_| | |_| |
+|_____/ \___|_.__/|_.__/ \__,_|\__, |_|  |_|\___|_____/ \__,_|\__,_|\__,_|\__, |
+                                __/ |                                      __/ |
+                               |___/                                      |___/ 
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Bon, c'était long et compliqué de comprendre le fonctionnement, mais j'ai réussi : le mot de passe est : Prol0gin
+
+
+Alors, comment j'ai fais ? C'était simple (pas du tout)
+
+J'ai regardé dans le Main quelles fonctions étaient appellées : 'ghfjdkslamznxbcv' (A) et 'are_you_leet_enough' (B)
+
+On va les appeller A et B pour faciliter la lecture.
+
+Donc, A utilise bb8, qui m'a fait comprendre qu'il y avait un lien entre les nombres et les caractères (très important)
+
+Et B appelle 'vcxzpoiu'. Donc je me suis dis, bon sérieux comment ça marche ce truc..
+
+Du coup, je suis parti d'une autre piste (qui s'est avérée être la bonne !) :
+
+Etant intrigué par la fonction 'cdewsxvfrtgbnhyui', je décide de la CTRL+F dans Dummy.cs, 
+et là, surprise, je tombe sur "You found the password!".
+Donc, je me suis dit que c'était la bonne voie.
+
+Donc même chose avec la fonction qui l'appelle dans Program.cs : 'sadkjhaksfdh'
+
+Donc CTRL+F 'sadkjhaksfdh' et là, je le trouve dans une autre fonction avec une valeur, associée avec le case (13 en l'occurence)
+
+Ainsi, je répète l'opération jusqu'à ne plus pouvoir retourner dans une fonction, et note tout cela dans un bloc-note, ce qui me donne :
+
+1 : cdewsxvfrtgbnhyui -> mdp
+2 : sadkjhaksfdh ->  13 
+3 : mnbvcjhiuu ->  0x6e
+4 : poiurewq ->  0x69
+5 : dogecoin ->  103 
+6 : pouet ->  0x30
+7 : nani ->  108 
+8 : qmkowirjflsak ->  111 
+9 : qwoeiulkajsdf ->  114
+10 : zxcvasdfqwer ->  80
+11 : vcxzpoiu -> 1er nom
+
+Ainsi, avec les valeurs, j'ai remplacé dans la fonction bb8 à la ligne "char b = (char) (a * 31)" 
+par char b = (char) + les différentes valeurs que j'ai trouvé précedemment et lancé le débugger afin d'obternir la valeur, 
+
+Ce qui m'a donné : 
+
+1 : cdewsxvfrtgbnhyui -> mdp
+2 : char b = (char) 13 -> \r
+3 : char b = (char) 0x6e -> n
+4 : char b = (char) 0x69 -> i
+5 : char b = (char) 103 -> g
+6 : char b = (char) 0x30 -> 0
+7 : char b = (char) 108 -> l
+8 : char b = (char) 111 -> o
+9 : char b = (char) 114 -> r
+10 : char b = (char) 80 -> P
+11 : 1er nom
+
+Ce qui, remis dans l'ordre, nous donne : Prol0gin.
+
+Et voilà, c'est comme ça que j'ai trouvé le mot de passe, en espérant avoir été clair dans mes explications..
+
+PS : c'est possible d'avoir les badges Bonus || Finish It || No Trash et Readme svp :)
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

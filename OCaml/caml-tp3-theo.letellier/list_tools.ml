@@ -1,0 +1,215 @@
+(*==============================================================================================================*)
+(*1 - Boite à outils*)
+
+(*1.1.1 lenght*)
+
+let rec length list =
+  if list = [] then 0
+  else
+    let e::l=list in
+    1+length l;;
+
+length [0; 1; 0; 1; 0; 0; 0; 0; 1; 1] ;;
+
+(*-------------------------------------------------------------------*)
+
+(*1.1.2 append*)
+
+let append l1 l2 =
+  if l2 = [] then l1
+  else let rec append_rec = function
+    []-> l2
+    |e::l ->e::append_rec l
+in append_rec l1;;
+
+append [1; 2; 3] [4; 5] ;;
+append [ 'a'; 'b'; 'c'] [] ;;
+
+(*-------------------------------------------------------------------*)
+
+(*1.1.3 coupleSize*)
+
+
+let rec coupleSize l =
+  match l with
+      [] -> 0
+    |e::f -> let (x,_) = e in x+coupleSize f;;
+
+
+coupleSize [(1 , 'a') ; (5 , 'c') ; (4 , 'b') ];;
+coupleSize [(4 , " planche ") ; (2 , " lampe ") ; (7 , " bouteille ") ]
+
+(*-------------------------------------------------------------------*)
+
+(*1.1.4 nth*)
+
+
+let rec nth n i = 
+  if n>=0 then
+    match i with
+      |e::l when n=0 -> e
+      |e::l -> nth (n-1) l
+      |	[]-> invalid_arg "n doit être plus petit"
+  else
+    failwith "n doit être superieur ou égal à 0";;
+
+
+nth 5 [1; 2; 3; 4; 5] ;;
+nth 0 [ 'a'; 'b'; 'c'] ;;
+
+(*-------------------------------------------------------------------*)
+
+(*1.1.5 search_pos*)
+
+
+let rec search_pos n liste = match liste with
+    e::l when n=e -> 0
+  |e::l -> 1+search_pos n l
+  |_ -> failwith "search_pos not found";;
+
+
+search_pos 0 [1; 5; -1; 0; 8; 0] ;;
+search_pos 'z' [ 'r'; 'h'; 'j'; 'o'] ;;
+
+(*-------------------------------------------------------------------*)
+
+(*1.1.6 sum_digits*)
+
+let rec sum_digits n =
+  if n>0 then (n mod 10)+sum_digits(n/10)
+  else 0;;
+
+sum_digits 235 ;;
+
+(*-------------------------------------------------------------------*)
+
+(*1.1.7 common*)
+
+let common (liste,liste_bis) =
+  let rec en_commun x y = match x with
+    |[] -> 0
+    |e::l ->
+      match y with
+	|[] -> en_commun l liste_bis
+	|f::q ->
+	if f = e then e
+	else en_commun x q
+	  
+  in en_commun liste liste_bis;;
+
+common ([1;2;4;8;16] ,[5;10;16]) ;;
+common ([1;2;4;8;23] ,[5;10;16;31;42]) ;;
+
+(*-------------------------------------------------------------------*)
+
+(*1.1.8 prefix*)
+
+let rec prefix (l1,l2) = match (l1,l2) with
+  |([],[]) -> true
+  |(e::l,f::m) when e<>f -> false
+  |(e::l,f::m) when e=f -> prefix (l,m)
+  |_ -> true;;
+
+prefix ([1; 2; 3] , [1; 2]) ;;
+prefix ([1; 2] , [1; 2; 3; 4]) ;;
+prefix ([1; 2] , [1; 3; 4]) ;;
+
+(*==============================================================================================================*)
+
+
+(*1.2 Construire*)
+
+
+(*1.2.1 - init_list*)
+
+let rec init_list n x =
+  if n < 0 then invalid_arg "n doit etre positif"
+  else
+    match n with
+      |0->[]
+      |_-> x::init_list(n-1)x;;
+
+init_list 5 0 ;;
+
+(*-------------------------------------------------------------------*)
+
+(*1.2.2 - put_list*)
+
+let rec put_list v i liste =
+  if i<0 then invalid_arg "i doit etre positif"
+  else match liste with
+    |e::l when i=0 -> v::l
+    |e::l -> e::put_list v (i-1) l
+    |_ -> [];;
+
+put_list 'x' 3 [ '-'; '-'; '-'; '-'; '-'; '-'] ;;
+
+
+(*==============================================================================================================*)
+
+
+
+(*1.3.1 - init_board*)
+
+let rec init_list n x =
+  if n < 0 then invalid_arg "n doit etre positif"
+  else
+    match n with
+      |0->[]
+      |_-> x::init_list(n-1)x;;
+
+let init_board (l,c) x =
+  init_list l (init_list c x) ;;
+
+let board = init_board (5 , 3) 0;;
+
+(*-------------------------------------------------------------------*)
+
+(*1.3.2 - get_cell*)
+
+let rec nth n i =
+  if n>=0 then
+    match i with
+      |e::l when n=0 -> e
+      |e::l -> nth (n-1) l
+      |[]-> invalid_arg "n doit être plus petit"
+  else
+    failwith "n doit être superieur ou égal à 0";;
+
+let get_cell (x, y) board =
+  nth y (nth x board) ;;
+
+
+
+(*-------------------------------------------------------------------*)
+
+(*1.3.3 - put_cell*)
+
+let rec nth n i =
+  if n>=0 then
+    match i with
+      |e::l when n=0 -> e
+      |e::l -> nth (n-1) l
+      |[]-> invalid_arg "n doit être plus petit"
+  else
+    failwith "n doit être superieur ou égal à 0";;
+
+let rec put_list v i liste =
+  if i<0 then invalid_arg "i doit etre positif"
+  else match liste with
+    |e::l when i=0 -> v::l
+    |e::l -> e::put_list v (i-1) l
+    |_ -> [];;
+
+let put_cell v (x,y) board =
+  put_list (put_list v y (nth x board)) x board;;
+
+
+let board = put_cell 1 (0 , 0) board ;;
+
+let board = put_cell 2 (2 , 1) board ;;
+
+get_cell (2 , 1) board ;;
+
+
+(*==============================================================================================================*)

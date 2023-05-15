@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csproj", "{60206182-C989-4545-8E8F-16268E12073D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteRabbit", "WhiteRabbit\WhiteRabbit.csproj", "{0A761905-3AC7-41A4-822C-0C9770C64418}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60206182-C989-4545-8E8F-16268E12073D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60206182-C989-4545-8E8F-16268E12073D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60206182-C989-4545-8E8F-16268E12073D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60206182-C989-4545-8E8F-16268E12073D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A761905-3AC7-41A4-822C-0C9770C64418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A761905-3AC7-41A4-822C-0C9770C64418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A761905-3AC7-41A4-822C-0C9770C64418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A761905-3AC7-41A4-822C-0C9770C64418}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

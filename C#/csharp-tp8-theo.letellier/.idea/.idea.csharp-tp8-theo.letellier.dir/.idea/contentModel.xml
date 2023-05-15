@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Theo\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Theo\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Theo\TP\csharp-tp8-theo.letellier" t="IncludeFlat">
+      <e p="Lost_in_Wonderland" t="IncludeRecursive">
+        <e p="Backtracking.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BinaryMaze.cs" t="Include" />
+        <e p="Cell.cs" t="Include" />
+        <e p="Lost_in_Wonderland.csproj" t="IncludeRecursive" />
+        <e p="Maze.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="Lost_in_Wonderland.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PrimMaze.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

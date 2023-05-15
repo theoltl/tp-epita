@@ -1,0 +1,104 @@
+﻿Bien le bonjour ! 
+
+Qui dit nouvelle semaine dit nouveau TP !
+
+Alors je vais donc te débrifer, en étant clair et concis bien évidemment, mon TP (avec un peu d'Ascii pour l'esthétique):
+________________________________________________________________________________________________________________________________________________________
+
+Bon, on va commencer par le début, fonction par fonction :
+
+  ____            _          
+ |  _ \          (_)         
+ | |_) | __ _ ___ _  ___ ___ 
+ |  _ < / _` / __| |/ __/ __|
+ | |_) | (_| \__ \ | (__\__ \
+ |____/ \__,_|___/_|\___|___/
+                             
+ 
+---------------------------------------------------------------------------------------------------------------------
+
+1 - ListThemAll : liste tout les fichiers dans un path donné en paramètre.
+> Pas de difficulté particulière
+
+---------------------------------------------------------------------------------------------------------------------
+
+2 - ListMyDirectory :  liste tout les dossiers dans un path donné en paramètre.
+> Pas de difficulté particulière
+---------------------------------------------------------------------------------------------------------------------
+
+3 - Levenshtein: Compare le nombre de lettres différentes position par position entre deux mots.
+> Pas de difficulté particulière
+---------------------------------------------------------------------------------------------------------------------
+
+4 - ListMyLevenshtein: Utilise Levenshtein + les fichiers et les dossiers qui ont un écart de lettre inférieur à celui donnée en paramètre.
+
+> Pas de difficulté particulière
+
+--------------------------------------------------------------------------------------------------------------------
+
+5 - CopyThisFile : Copie un fichier d'un path donné dans un autre path donné seulement si il n'existe pas déjà dans le path de sortie.
+
+> Pas de difficulté particulière
+
+--------------------------------------------------------------------------------------------------------------------
+
+Et voilà, c'est fini pour le Basics, maintenant on s'attaque au CryptoRabbit !
+
+________________________________________________________________________________________________________________________________________________________
+
+   _____                  _        _____       _     _     _ _    
+  / ____|                | |      |  __ \     | |   | |   (_) |   
+ | |     _ __ _   _ _ __ | |_ ___ | |__) |__ _| |__ | |__  _| |_  
+ | |    | '__| | | | '_ \| __/ _ \|  _  // _` | '_ \| '_ \| | __| 
+ | |____| |  | |_| | |_) | || (_) | | \ \ (_| | |_) | |_) | | |_  
+  \_____|_|   \__, | .__/ \__\___/|_|  \_\__,_|_.__/|_.__/|_|\__| 
+               __/ | |                                            
+              |___/|_|                      
+
+---------------------------------------------------------------------------------------------------------------------
+
+1 - ReadFileContent : Lis le contenu d'un fichier et l'affiche dans la console.
+> Pas de difficulté particulière
+
+---------------------------------------------------------------------------------------------------------------------
+
+2 - WriteFileContent: Écrit dans le fichier filename le content rentré en paramètre. Si le fichier n’existe pas, on le créé
+> Pas de difficulté particulière
+
+---------------------------------------------------------------------------------------------------------------------
+
+3 - Bitwise: Crypte un texte d'un décalage de n caractères vers la gauche ou vers la droite en fonction du mode choisi.
+> Pas de difficulté particulière
+________________________________________________________________________________________________________________________________________________________
+
+  _______            
+ |__   __|           
+    | |_ __ ___  ___ 
+    | | '__/ _ \/ _ \
+    | | | |  __/  __/
+    |_|_|  \___|\___|
+                     
+ 
+ ---------------------------------------------------------------------------------------------------------------------
+ 
+La fonction tree permet d'afficher l'arborescence d'un path donné à 2 rang. Il utilise la fonction auxilliaire ListMyFiles pour les fichiers
+contenus dans le path puis ListMyFilesInFolder pour les fichiers se trouvant dans les dossiers qui se trouvent dans path.
+
+
+ _______________________________________________________________________________________________________________________________________________________
+
+
+Voilà voilà
+C'est ici que s'achève mon README, en espérant qu'il n'aura pas été trop ennuyant.
+
+A la semaine prochaine pour de nouvelles fonctions
+ 
+
+
+
+
+
+
+
+
+

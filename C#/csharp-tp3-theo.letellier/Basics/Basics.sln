@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csproj", "{BB3DD229-6FBC-41AE-9DCD-D017B0A06E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Takuzu", "Takuzu\Takuzu.csproj", "{2ED2FA32-9208-4DF4-8501-97200FC457FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB3DD229-6FBC-41AE-9DCD-D017B0A06E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3DD229-6FBC-41AE-9DCD-D017B0A06E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3DD229-6FBC-41AE-9DCD-D017B0A06E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3DD229-6FBC-41AE-9DCD-D017B0A06E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED2FA32-9208-4DF4-8501-97200FC457FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED2FA32-9208-4DF4-8501-97200FC457FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED2FA32-9208-4DF4-8501-97200FC457FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED2FA32-9208-4DF4-8501-97200FC457FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

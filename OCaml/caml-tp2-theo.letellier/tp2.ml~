@@ -1,0 +1,5 @@
+let rec build_line str n =
+  if n < 0 then invalid_arg "n doit etre positif"
+  else match n with
+      0 -> ""
+    |_ -> str ^ (build_line str (n-1));;

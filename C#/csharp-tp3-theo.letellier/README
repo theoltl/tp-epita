@@ -1,0 +1,122 @@
+Bien le bonjour ! 
+
+Qui dit nouvelle semaine dit nouveau TP alors je vais donc te débrifer, en étant clair et concis bien évidemment, mon TP (avec un peu d'Ascii pour l'esthétique):
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ 
+  ____            _          
+ |  _ \          (_)         
+ | |_) | __ _ ___ _  ___ ___ 
+ |  _ < / _` / __| |/ __/ __|
+ | |_) | (_| \__ \ | (__\__ \
+ |____/ \__,_|___/_|\___|___/
+                             
+				  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Swap: Inverser deux entiers 
+>  Pas de difficulté particulière
+
+
+Trunc: On stock la troncature du flottant 'f' donné  dans une variable 'a', on attribue à 'f' sa partie décimale et enfin on retourne 'a'.
+>  Pas de difficulté particulière
+
+
+RotChar: Je pense qu'il y a plus opti', mais j'ai trouvé que c'était la méthode la plus simple de traiter au cas par cas.
+	 Ainsi, on cherche à quoi correspond le caractère entré et on l'encadre pour qu'il nous renvoie un caractère du même type :
+	chiffre -> chiffre // minuscule -> minuscule // majuscule -> majuscule.
+>  Pas de difficulté particulière
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Search: Parcours la liste jusqu'à temps de trouver l'int 'e', si il n'y a pas de correspondance, on retourne -1.
+>  Pas de difficulté particulière.
+
+
+KingOfTheHill: Regarde si la liste donné est croissante et/ou décroissante qu'une seule fois (1 colline), si il y en a 2 ou +, alors 
+		la fonction retourne -1.
+>  Pas de difficulté particulière.
+
+
+CloneArray: Duplique et renvoie arr.  
+> Pas de difficulté particulière
+
+
+BubbleSort: Boucle for qui compare avec l'entier du rang n avec celui du rang n+1, si l'entier au rang n est supérieur à celui 
+            du rang n+1 alors on les inverse et on recommence en reprenant la liste du début. 
+> Pas de difficulté particulière
+
+
+
+RotN : Boucle for qui s'applique à chaque caractère de la liste de caractère et effectue une rotation de n caractère.
+> Pas de difficulté particulière
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+  _______    _                    
+ |__   __|  | |                   
+    | | __ _| | ___   _ _____   _ 
+    | |/ _` | |/ / | | |_  / | | |
+    | | (_| |   <| |_| |/ /| |_| |
+    |_|\__,_|_|\_\\__,_/___|\__,_|
+                                  
+Pour toutes les fonctions, le tableau est parcouru de haut en bas et de gauche vers la droite : 0,0 se situe tout en haut et tout à gauche.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PrintGrid : Affiche le nombre de lignes et de colonnes grâce à une boucle for, et complète en fonctions des valeurs dans le tableau.
+> Pas de difficulté particulière
+
+IsRowValid : Compare si le nombre de 1 et 0 est égal et si il n'y a pas 3 chiffres identiques à la suite.
+> Pas de difficulté particulière
+
+IsColumnValid: Compare si le nombre de 1 et 0 est égal et si il n'y a pas 3 chiffres identiques à la suite.
+> Pas de difficulté particulière
+
+
+IsGridValid : On combine les deux fonctions précédentes.
+> Pas de difficulté particulière
+
+
+PutCell : Regarde si la cellule appelée est vide, si c'est le cas alors elle implémente la valeur donnée, dans le cas contraire elle ne fait rien
+> Pas de difficulté particulière	
+
+
+Game : On appelle toutes les fonctions précédentes avec en plus l'initialisation de x y et value par l'utilisateur.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+           _____ 
+     /\   |_   _|
+    /  \    | |  
+   / /\ \   | |  
+  / ____ \ _| |_ 
+ /_/    \_\_____|
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pour le fonctionnement de l'AI, j'ai pensé à faire le remplissage de la grille ligne par ligne, afin que cela soit plus simple à compléter.
+J'ai initialisé une copie au cas où le grid généré est faux.
+
+Ainsi, on parcours case par case tout le tableau en insérant des valeurs, certes générées aléatoirement, mais correspondant aux critères de 
+Putcell.
+
+Ainsi, lorsque la grille est invalide on relance avec AI avec la copy du grid avant modification.
+
+Toutefois, lorsque la grille générée est valide, alors on retourne "Completed" suivi du grid générée par la fonction. 
+
+Cependant, il arrive parfois que la grille générée soit suivie d'un StackOverflow, et impossible d'en trouver la source..
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Voilà voilà
+C'est ici que s'achève mon README, en espérant qu'il n'aura pas été trop ennuyant.
+
+A la semaine prochaine pour de nouvelles fonctions ! 
